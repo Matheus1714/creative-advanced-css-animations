@@ -1,0 +1,59 @@
+:root {
+  --button-color: #272727;
+  --button-transiction: #fff200;
+  --font-size: 2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+.container a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: var(--button-color);
+  font-size: var(--font-size);
+  border: 5px solid var(--button-color);
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+.container a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--button-transiction);
+  z-index: -1;
+  transition: transform 1s;
+}
+.container a:hover:before {
+  transform: rotate(0deg);
+}
+.container .case-1:before {
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+}
+.container .case-2:before {
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+.container .case-3:before {
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+}
+.container .case-4:before {
+  transform-origin: top right;
+  transform: rotate(90deg);
+}
