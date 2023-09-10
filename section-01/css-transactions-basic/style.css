@@ -1,12 +1,23 @@
 :root {
+  --bg-color: #282828;
   --bg-button-color: #2222c5;
   --bg-button-color-hover: #38c538;
-  --text-colot: #fff;
+  --bg-button-color-active: #d31414;
+
+  --text-color: #fff;
+  --text-color-hover: #000;
+
+  --w-button: 5.625rem;
+  --w-button-hover: 37rem;
+  --h-button: 18.74rem;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
 }
 .container {
   width: 100%;
@@ -16,16 +27,25 @@
   height: 100vh;
 }
 button {
-  height: 90px;
-  width: 290px;
-  font-size: 28px;
+  height: var(--w-button);
+  width: var(--h-button);
+  font-size: 1.5rem;
   border: none;
-  color: var(--text-colot);
+  color: var(--text-color);
   background-color: var(--bg-button-color);
-  transition-property: background-color;
-  transition-duration: 1s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s linear 0.05s;
 }
 
 button:hover {
   background: var(--bg-button-color-hover);
+  color: var(--text-color-hover);
+  border-radius: 9999px;
+}
+button:active {
+  background: var(--bg-button-color-active);
+  color: var(--text-color-hover);
 }
