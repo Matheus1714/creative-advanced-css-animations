@@ -42,10 +42,7 @@ button {
 
 button:hover {
   background: var(--bg-button-color-hover);
-  color: var(--text-color-hover);
-  border-radius: 9999px;
 }
 button:active {
   background: var(--bg-button-color-active);
-  color: var(--text-color-hover);
 }
