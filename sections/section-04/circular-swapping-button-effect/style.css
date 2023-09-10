@@ -1,0 +1,60 @@
+:root {
+  --button-line-color: #ff6347;
+  --button-color: tomate;
+  --text-color: #fff;
+  --font-size: 2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+.container .btn {
+  border: 2px solid var(--button-line-color);
+  background: none;
+  color: var(--button-line-color);
+  padding: 20px 40px;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.container .btn:hover {
+  color: var(--text-color);
+}
+.container .btn:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--button-line-color);
+  z-index: -1;
+  height: 0%;
+  transition: all 0.5s;
+}
+.container .top:before {
+  top: 0;
+  left: 0;
+  height: 0%;
+  border-radius: 0 0 50% 50%;
+}
+.container .bottom:before {
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  border-radius: 50% 50% 0% 0%;
+}
+.container .btn:hover:before {
+  height: 190%;
+}

@@ -70,4 +70,41 @@ const projects = [
     src: "./sections/section-04/swipe-button-effect/index.html",
     imgSrc: "./assets/projects/section-04-swipe-button-effect.png",
   },
+  {
+    title: "Button Swipe Effect",
+    description: "Design swipe-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/button-swipe-effect/index.html",
+    imgSrc: "./assets/projects/section-04-button-swipe-effect.png",
+  },
+  {
+    title: "Button Glowing Effect",
+    description: "Design glowing-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/button-glowing-effect/index.html",
+    imgSrc: "./assets/projects/section-04-button-glowing-effect.png",
+  },
+  {
+    title: "Button Tow Layers Swapping Effect",
+    description: "Design glowing-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/button-tow-layers-swapping-effect/index.html",
+    imgSrc:
+      "./assets/projects/section-04-button-tow-layers-swapping-effect.png",
+  },
+  {
+    title: "Text Scaling Button Effect",
+    description: "Design glowing-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/text-scaling-button-effect/index.html",
+    imgSrc: "./assets/projects/section-04-text-scaling-button-effect.png",
+  },
+  {
+    title: "Circular Swapping Button Effect",
+    description: "Design glowing-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/circular-swapping-button-effect/index.html",
+    imgSrc: "./assets/projects/section-04-circular-swapping-button-effect.png",
+  },
+  {
+    title: "Rotating 3 Layers Button Effect",
+    description: "Design glowing-effect interactions for buttons using CSS.",
+    src: "./sections/section-04/rotating-3-layers-button-effect/index.html",
+    imgSrc: "./assets/projects/section-04-rotating-3-layers-button-effect.png",
+  },
 ]

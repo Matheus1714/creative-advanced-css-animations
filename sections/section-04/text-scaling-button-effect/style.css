@@ -1,0 +1,53 @@
+:root {
+  --button-color: #262626;
+  --text-color: #fff;
+  --button-transiction: var(--button-color);
+  --font-size: 2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+.container a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: var(--button-color);
+  font-size: var(--font-size);
+  border: 3px solid var(--button-color);
+  padding: 40px 80px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.container a:before {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--button-color);
+  color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.container a:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
