@@ -83,6 +83,7 @@ body {
 }
 .container #content .card {
   max-width: 20rem;
+  min-height: 37.5rem;
 
   display: flex;
   align-items: center;
@@ -117,6 +118,7 @@ body {
   font-size: var(--text-button-size);
   background: var(--bg-button-color);
   transition: all 0.5s;
+  margin-top: auto;
 }
 .container #content .card a:hover {
   background-color: var(--bg-button-hover-color);
@@ -188,6 +190,9 @@ body {
   }
   .container #content .card {
     max-width: 100%;
+  }
+  .container #content .card:not(:first-child) {
+    margin-top: 1rem;
   }
 }
 @media (max-width: 280px) {
