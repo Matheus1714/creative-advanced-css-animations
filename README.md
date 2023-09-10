@@ -1,5 +1,7 @@
 # Udemy | Creative Advanced CSS Animations
 
+![animation-project](.github/animation-project.gif)
+
 ## About
 
 This repository contains my solution to the Udemy course titled [Creative Advanced CSS Animations](https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/).
