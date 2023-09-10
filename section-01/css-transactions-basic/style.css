@@ -1,0 +1,31 @@
+:root {
+  --bg-button-color: #2222c5;
+  --bg-button-color-hover: #38c538;
+  --text-colot: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  height: 90px;
+  width: 290px;
+  font-size: 28px;
+  border: none;
+  color: var(--text-colot);
+  background-color: var(--bg-button-color);
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+button:hover {
+  background: var(--bg-button-color-hover);
+}
